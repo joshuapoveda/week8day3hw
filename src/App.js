@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import Student from "./components/Student";
-
+import './App.css';
 
 const App = () => {
   const [studentData, setStudentData] = useState({
@@ -69,13 +69,14 @@ const App = () => {
 console.log(studentData.students)
 const dataSet = studentData.students.map((data)=>{
   return(
-    <Student props={data}/>
+    <Student  props={data}/>
   )
 })
 console.log(dataSet)
   return (
-    <div>
-      {dataSet}
+    <div >
+      <h1 className="header">STUDENTS:</h1>
+      <div className="student-main-style">{dataSet}</div>
     </div>
   );
 };

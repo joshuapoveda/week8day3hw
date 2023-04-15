@@ -12,8 +12,8 @@ const Student = ({props}) => {
 console.log(dataSetTwo)
   return (
     <div>
-        <h3>{props.name}</h3>
-        <h3>{props.bio}</h3>
+        <h3 className="student-style items1">{props.name}</h3>
+        <h3 className="student-style bio">{props.bio}</h3>
         {dataSetTwo}
     </div>
   )
